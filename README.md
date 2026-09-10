@@ -4,6 +4,17 @@ A modular, offline Retrieval-Augmented Generation (RAG) system built in Python u
 
 ---
 
+## 🏗️ Technical Stack & Design Rationale
+
+- **Embedding Model (`nomic-embed-text` via Ollama):**
+  Selected for its 768-dimensional dense vector representation specifically optimized for retrieval and text similarity tasks. Runs 100% locally via local Ollama inference, eliminating external API dependency and latency.
+- **Vector Database (ChromaDB):**
+  Selected as the local vector store (`chromadb.PersistentClient` saved under `./chroma_db`). It provides lightweight, serverless vector persistence, fast L2/cosine similarity indexing, and clean metadata filtering for source document attribution.
+- **Chunking Strategy (Recursive Character Splitting - `CHUNK_SIZE=400`, `CHUNK_OVERLAP=50`):**
+  Implements recursive splitting prioritizing double newlines (`\n\n`), single newlines (`\n`), spaces, and characters. This strategy was chosen because it respects structural paragraph and sentence boundaries, keeping semantic concepts intact while the 50-character overlap prevents boundary context loss across neighboring chunks.
+
+---
+
 ## 🛠️ Architecture & Modules
 
 The project is structured under the `app/` package for clean separation of concerns:
