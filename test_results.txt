@@ -1,0 +1,95 @@
+### Question 1 [INSIDE DOCS]: "How do I set up my mobile device for company email?"
+**Retrieved Chunks:**
+- [1] Source: 001_Setting_Up_a_Mobile_Device_for_Company_Email.txt (Distance: 0.1965)
+      Snippet: "**Setting Up a Mobile Device for Company Email**  **Prerequisites:**  * Mobile device with a supported operating system ..."
+- [2] Source: 001_Setting_Up_a_Mobile_Device_for_Company_Email.txt (Distance: 0.3362)
+      Snippet: "If your company requires MDM for mobile devices, ensure that the profile is installed on your device. This profile will ..."
+- [3] Source: 001_Setting_Up_a_Mobile_Device_for_Company_Email.txt (Distance: 0.3802)
+      Snippet: "1. Go to the Settings app on your mobile device. 2. Select "Mail" or "Email" (depending on your device's operating syste..."
+
+**Final Answer:**
+> To set up your mobile device for company email, follow the steps below:
+
+1. Go to the Settings app on your mobile device.
+2. Select "Mail" or "Email" (depending on your device's operating system).
+3. Tap "Add Account" or "Create a new account".
+4. Select "Exchange" or "Corporate" as the account type.
+5. Enter your company email address and password.
+6. If prompted, enter the company's email server address (e.g., mail.company.com).
+7. Select the desired synchronization options (e.g., sync email, contacts, calendar).
+
+Source: [3] 001_Setting_Up_a_Mobile_Device_for_Company_Email.txt
+
+--------------------------------------------------
+
+### Question 2 [INSIDE DOCS]: "How do I configure VPN access for remote work?"
+**Retrieved Chunks:**
+- [1] Source: 003_Configuring_VPN_Access_for_Remote_Workers.txt (Distance: 0.2967)
+      Snippet: "**Configuring VPN Access for Remote Workers**  **Overview**  This article provides step-by-step instructions for configu..."
+- [2] Source: 003_Configuring_VPN_Access_for_Remote_Workers.txt (Distance: 0.4661)
+      Snippet: "**Prerequisites**  * The remote worker's device (laptop or desktop) must meet the company's minimum system requirements ..."
+- [3] Source: 003_Configuring_VPN_Access_for_Remote_Workers.txt (Distance: 0.5436)
+      Snippet: "**Step 1: Install the VPN Client**  1. Go to the company's software portal and download the VPN client software. 2. Run ..."
+
+**Final Answer:**
+> Based on the provided context, it appears that you need to follow the steps outlined in Step 1 and Step 2 of the article. However, since Step 2 is not explicitly detailed, I don't have enough information to provide a specific configuration method.
+
+The article does not provide the exact configuration steps for Step 2. It only mentions that the VPN client software should be launched after installation.
+
+Therefore, the answer is: I don't have enough information in the documents to answer that.
+
+--------------------------------------------------
+
+### Question 3 [INSIDE DOCS]: "What steps should I take if Microsoft Office is having issues?"
+**Retrieved Chunks:**
+- [1] Source: 004_Troubleshooting_Issues_with_Microsoft_Office.txt (Distance: 0.2133)
+      Snippet: "By following these steps, you should be able to troubleshoot and resolve common issues with Microsoft Office application..."
+- [2] Source: 004_Troubleshooting_Issues_with_Microsoft_Office.txt (Distance: 0.2749)
+      Snippet: "**Step 1: Restart Microsoft Office**  Before proceeding with troubleshooting, try restarting the Microsoft Office applic..."
+- [3] Source: 004_Troubleshooting_Issues_with_Microsoft_Office.txt (Distance: 0.3323)
+      Snippet: "**Additional Troubleshooting Tips**  * Check for antivirus software conflicts, as some antivirus programs can interfere ..."
+
+**Final Answer:**
+> According to Step 1 in [1] 004_Troubleshooting_Issues_with_Microsoft_Office.txt, the first step to troubleshoot Microsoft Office issues is to:
+
+**Restart Microsoft Office**
+
+This step is suggested as a simple and often effective solution to resolve problems caused by temporary glitches or corrupted files.
+
+--------------------------------------------------
+
+### Question 4 [INSIDE DOCS]: "How do I reset a forgotten PIN code?"
+**Retrieved Chunks:**
+- [1] Source: 002_Resetting_a_Forgotten_PIN.txt (Distance: 0.3026)
+      Snippet: "**Resetting a Forgotten PIN**  If you have forgotten your PIN, you can reset it using the following steps:  **Step 1: Ac..."
+- [2] Source: 002_Resetting_a_Forgotten_PIN.txt (Distance: 0.4186)
+      Snippet: "By following these steps, you should be able to reset your forgotten PIN and regain access to company systems and applic..."
+- [3] Source: 002_Resetting_a_Forgotten_PIN.txt (Distance: 0.4467)
+      Snippet: "**Step 4: Reset Your PIN**  1. Enter a new PIN in the required field. The PIN must be at least 8 characters long and con..."
+
+**Final Answer:**
+> To reset a forgotten PIN code, follow the steps outlined in the provided text:
+
+**Step 1: Access the PIN Reset Tool**
+**Step 4: Reset Your PIN**
+1. Enter a new PIN in the required field. The PIN must be at least 8 characters long and contain a mix of uppercase and lowercase letters, numbers, and special characters.
+2. Re-enter your new PIN in the confirmation field to ensure accuracy.
+3. Click the "Reset PIN" button to complete the process.
+
+I don't have enough information in the documents to answer that. (002_Resetting_a_Forgotten_PIN.txt)
+
+--------------------------------------------------
+
+### Question 5 [NOT IN DOCS]: "What is the reimbursement limit for business travel meal expenses?"
+**Retrieved Chunks:**
+- [1] Source: 001_Setting_Up_a_Mobile_Device_for_Company_Email.txt (Distance: 1.0312)
+      Snippet: "**Additional Information:**..."
+- [2] Source: 001_Setting_Up_a_Mobile_Device_for_Company_Email.txt (Distance: 1.0547)
+      Snippet: "If your company requires MDM for mobile devices, ensure that the profile is installed on your device. This profile will ..."
+- [3] Source: 001_Setting_Up_a_Mobile_Device_for_Company_Email.txt (Distance: 1.0819)
+      Snippet: "**Setting Up a Mobile Device for Company Email**  **Prerequisites:**  * Mobile device with a supported operating system ..."
+
+**Final Answer:**
+> I don't have enough information in the documents to answer that.
+
+--------------------------------------------------
