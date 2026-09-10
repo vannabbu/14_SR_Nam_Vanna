@@ -4,18 +4,7 @@ A modular, offline Retrieval-Augmented Generation (RAG) system built in Python u
 
 ---
 
-## 🏗️ Technical Stack & Design Rationale
-
-- **Embedding Model (`nomic-embed-text` via Ollama):**
-  Selected for its 768-dimensional dense vector representation specifically optimized for retrieval and text similarity tasks. Runs 100% locally via local Ollama inference, eliminating external API dependency and latency.
-- **Vector Database (ChromaDB):**
-  Selected as the local vector store (`chromadb.PersistentClient` saved under `./chroma_db`). It provides lightweight, serverless vector persistence, fast L2/cosine similarity indexing, and clean metadata filtering for source document attribution.
-- **Chunking Strategy (Recursive Character Splitting - `CHUNK_SIZE=400`, `CHUNK_OVERLAP=50`):**
-  Implements recursive splitting prioritizing double newlines (`\n\n`), single newlines (`\n`), spaces, and characters. This strategy was chosen because it respects structural paragraph and sentence boundaries, keeping semantic concepts intact while the 50-character overlap prevents boundary context loss across neighboring chunks.
-
----
-
-## 🛠️ Architecture & Modules
+##  Architecture & Modules
 
 The project is structured under the `app/` package for clean separation of concerns:
 
@@ -31,7 +20,7 @@ The project is structured under the `app/` package for clean separation of conce
 
 ---
 
-## 🚀 How to Run & Test
+##  How to Run & Test
 
 ### 1. Interactive Chat Application
 To start the chat application loop:
@@ -54,7 +43,7 @@ poetry run python test_rag_benchmark.py
 
 ---
 
-## 🧪 5-Question Benchmark Test Results
+##  5-Question Benchmark Test Results
 
 The RAG application was evaluated against 5 queries (4 in-domain IT support questions and 1 out-of-domain question).
 
@@ -110,7 +99,7 @@ The RAG application was evaluated against 5 queries (4 in-domain IT support ques
 
 ---
 
-## 📝 Reflection
+##  Reflection
 
 Building this Retrieval-Augmented Generation (RAG) system provided valuable hands-on insight into modern local search and generation architectures.
 
