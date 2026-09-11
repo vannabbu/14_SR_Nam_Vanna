@@ -101,13 +101,18 @@ The RAG application was evaluated against 5 queries (4 in-domain IT support ques
 
 ##  Reflection
 
-Building this Retrieval-Augmented Generation (RAG) system provided valuable hands-on insight into modern local search and generation architectures.
+### Overview
+This project implements an offline Retrieval-Augmented Generation (RAG) system to evaluate local embedding and retrieval performance.
 
 ### What Worked Well
-The modular architecture (`ingestion`, `chunking`, `embeddings`, `vector_store`, `retriever`, and `generator`) made component isolation and testing straightforward. Utilizing Ollama with `nomic-embed-text` paired with ChromaDB yielded high similarity accuracy (distance scores below 0.35 for relevant chunks), while `llama3.2:3b` executed strict context-grounded synthesis. The system reliably rejected out-of-domain queries—such as questions about business travel meal reimbursements—by returning high distance metrics (>1.0) and adhering to the fallback prompt instruction: *"I don't have enough information in the documents to answer that."*
+### Strengths
+- **Modular Architecture:** Decoupled components (`ingestion`, `chunking`, `embeddings`, `vector_store`, `retriever`, `generator`) simplify maintenance and testing.
+- **Retrieval Precision:** Local Ollama embeddings (`nomic-embed-text`) with ChromaDB achieved distance scores under 0.35 for relevant context snippets.
+- **Context Grounding:** The LLM (`llama3.2:3b`) consistently answered in-domain queries and correctly rejected out-of-domain queries when relevance distance exceeded threshold metrics.
 
-### What Was Harder Than Expected
-Balancing chunk size and context overlap proved surprisingly tricky. Small fixed-size chunks (400 characters) occasionally split contiguous multi-step instructions (such as step-by-step VPN configuration guides) across chunk boundaries. This led to instances where the retriever returned partial context, causing the generator to notice incomplete steps and issue partial fallback responses despite relevant information existing across adjacent blocks.
-
-### Future Improvement with Advanced RAG
-To resolve context fragmentation and improve retrieval precision, I plan to implement **Re-Ranking** using a Cross-Encoder model (such as `bge-reranker-large`). Initial vector retrieval will fetch a broader top-$k$ candidate list (e.g., $k=10$), which the cross-encoder will re-score based on full query-document cross-attention before handing the top 3 snippets to the LLM. Combining re-ranking with **Parent-Child Chunking** will preserve macro-level context while allowing granular vector indexing.
+### Challenges
+- **Context Fragmentation:** Fixed chunk sizes (400 characters) occasionally split continuous multi-step procedures across chunks, leading to partial context retrieval.
+  
+### Future Improvements
+- **Re-Ranking:** Integrate a Cross-Encoder model (`bge-reranker-large`) to re-score candidate chunks before LLM generation.
+- **Parent-Child Chunking:** Index smaller child chunks for retrieval while passing broader parent context to the generator.
